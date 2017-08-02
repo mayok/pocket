@@ -1,0 +1,29 @@
+{
+  "name": "pocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss html/sss/*.sss -u autoprefixer -p sugarss -o html/css/style.css",
+    "watch": "postcss html/sss/*.sss -w -u autoprefixer -p sugarss -o html/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayok/pocket.git"
+  },
+  "author": "Naohiro Iwamoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayok/pocket/issues"
+  },
+  "homepage": "https://github.com/mayok/pocket#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "postcss": "^6.0.8",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "precss": "^2.0.0",
+    "sugarss": "^1.0.0"
+  },
+  "dependencies": {}
+}
