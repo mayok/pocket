@@ -102,8 +102,12 @@ body {
 .page-manager {
   display: flex;
   margin-top: var(--header-height);
-  margin-left: var(--guide-width);
   flex: 1;
+}
+@media (min-width: 1276px) {
+  .page-manager {
+    margin-left: var(--guide-width);
+  }
 }
 .page-wrapper {
   overflow: hidden;
@@ -113,7 +117,32 @@ body {
   align-items: center;
 }
 .page-browse {
-  width: 856px;
+  width: 428px;
+}
+@media (min-width: 662px) {
+  .page-browse {
+    width: 642px;
+  }
+}
+@media (min-width: 876px) {
+  .page-browse {
+    width: 856px;
+  }
+}
+@media (min-width: 1090px) {
+  .page-browse {
+    width: 1070px;
+  }
+}
+@media (min-width: 1276px) {
+  .page-browse {
+    width: 856px;
+  }
+}
+@media (min-width: 1366px) {
+  .page-browse {
+    width: 1070px;
+  }
 }
 .page-subheader, .page-contents {
   margin-top: 24px;
@@ -149,11 +178,17 @@ body {
  *
  */
 #guide {
+  display: none;
   position: fixed;
   top: -120px;
   bottom: -120px;
   left: 0;
   width: var(--guide-width);
+}
+@media (min-width: 1276px) {
+  #guide {
+    display: block;
+  }
 }
 .guide-icon {
   width: 100%;
